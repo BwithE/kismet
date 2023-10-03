@@ -47,3 +47,7 @@ clear
 
 # List all previous device associations
 #sudo dmesg
+
+echo "Kismet installed."
+echo "Kismet conf file located at /etc/kismet/kismet_site.conf"
+echo "To see GPS device settings, run 'demsg'"
