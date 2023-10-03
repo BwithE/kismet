@@ -46,4 +46,4 @@ sudo gpsd /dev/ttyUSB0
 clear
 
 # List all previous device associations
-sudo dmesg
+#sudo dmesg
