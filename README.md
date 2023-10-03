@@ -1,5 +1,7 @@
 # Install and configure Kismet with GPS
 A Bash script for installing and configuring kismet.
+You will be prompted for user input on the username you'd like to create a kismet log directory.
+
 
 Copy the script to your linux machine: 
 ```wget https://raw.githubusercontent.com/BwithE/kismet/main/kismet_install.sh```
@@ -10,4 +12,4 @@ Make the script executable:
 Run the script:
 ```sudo ./kismet_install.sh``` or ```sudo bash kismet_install.sh```
 
-You will be prompted for user input on the username you'd like to create a kismet log directory.
+Documentation can be found at https://www.kismetwireless.net/
