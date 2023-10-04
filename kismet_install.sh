@@ -50,4 +50,4 @@ clear
 
 echo "Kismet installed."
 echo "Kismet conf file located at /etc/kismet/kismet_site.conf"
-echo "To see GPS device settings, run 'demsg'"
+echo "To see GPS device settings, run 'dmesg'"
