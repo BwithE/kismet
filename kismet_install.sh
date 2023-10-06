@@ -29,7 +29,7 @@ cat <<EOF > "$kismet_conf"
 #source=wlan0:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
 source=wlan1:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
 #gps
-#gps=gpsd:host=localhost,port=2947
+gps=gpsd:host=localhost,port=2947
 #Update logging path
 log_prefix=/home/$user/kismet
 log_types=kismet,pcapng
