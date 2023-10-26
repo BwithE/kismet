@@ -24,10 +24,10 @@ clear
 cat <<EOF > "$kismet_conf"
 #!kistmet_site.conf
 #bluetooth
-#source=hci0:type=linuxbluetooth
+source=hci0:type=linuxbluetooth
 #wifi
-#source=wlan0:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
-source=wlan1:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
+source=wlan0:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
+#source=wlan1:default_ht20=true:channel_hoprate=5/sec,type=linuxwifi
 #gps
 gps=gpsd:host=localhost,port=2947
 #Update logging path
