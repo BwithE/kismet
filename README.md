@@ -1,7 +1,7 @@
 # Install and configure Kismet with GPS
 This script is designed to automate the setup process for installing and configuring Kismet, a wireless network detector, sniffer, and intrusion detection system. Below is an overview of the script's usage, process, and key steps:
 
-#Usage:
+# Usage:
 Run Script: Execute the script using Bash on a Linux system.
 bash
 Copy code
@@ -16,7 +16,7 @@ Installing GPS Drivers: Installs GPSD, a service daemon that monitors one or mor
 Starting GPSD: Initiates GPSD to utilize the GPS puck (GPS receiver).
 Displaying Device Associations: Displays previous device associations using dmesg.
 Completion Message: Notifies the user about the successful installation of Kismet, the location of the configuration file, and how to view GPS device settings.
-#Detailed Process:
+# Detailed Process:
 User Input:
 
 Prompts the user to enter their username.
