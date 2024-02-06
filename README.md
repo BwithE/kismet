@@ -12,9 +12,9 @@ Then run the script:
 
 
 # Process Overview:
-"User Input": The script prompts the user to input their username, which is stored in a variable for later use.
+**User Input**: The script prompts the user to input their username, which is stored in a variable for later use.
 
-Creating Directory: A directory named "kismet" is created under the user's home directory.
+**Creating Directory**: A directory named "kismet" is created under the user's home directory.
 
 Setting Configuration: The script sets the location of the Kismet configuration file.
 
