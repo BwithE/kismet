@@ -2,10 +2,9 @@
 This script is designed to automate the setup process for installing and configuring Kismet, a wireless network detector, sniffer, and intrusion detection system. Below is an overview of the script's usage, process, and key steps:
 
 # Usage:
-Run Script: Execute the script using Bash on a Linux system.
-bash
-Copy code
-./script_name.sh
+Copy then run the script: 
+wget https://raw.githubusercontent.com/BwithE/kismet/main/kismet_install.sh
+
 # Process Overview:
 User Input: The script prompts the user to input their username, which is stored in a variable for later use.
 Creating Directory: A directory named "kismet" is created under the user's home directory.
