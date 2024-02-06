@@ -29,37 +29,3 @@ Then run the script:
 **Displaying Device Associations:** Displays previous device associations using dmesg.
 
 **Completion Message:** Notifies the user about the successful installation of Kismet, the location of the configuration file, and how to view GPS device settings.
-
-# Detailed Process:
-**User Input:**
-Prompts the user to enter their username.
-Clears the terminal screen.
-
-**Creating Directory:**
-Creates a directory named "kismet" under /home/$user/kismet.
-
-**Setting Configuration:**
-Defines the location of the Kismet configuration file (kismet_site.conf).
-
-**Installing Kismet:**
-Adds the Kismet repository key.
-Adds the Kismet repository to the system's package sources.
-Updates the package list.
-Installs Kismet using apt.
-
-**Creating Kismet Configuration:**
-Generates a configuration file for Kismet (kismet_site.conf) with specific source settings for Bluetooth, Wi-Fi, and GPS.
-
-**Installing GPS Drivers:**
-Installs GPSD using apt.
-
-**Starting GPSD:**
-Initiates GPSD to use the GPS puck connected to /dev/ttyUSB0.
-
-**Displaying Device Associations:**
-Lists previous device associations using dmesg.
-
-**Completion Message:**
-Notifies the user about the successful installation of Kismet.
-Informs the user about the location of the Kismet configuration file and how to view GPS device settings using dmesg.
-This script provides a streamlined way to set up Kismet with specific configurations, including Wi-Fi, Bluetooth, and GPS sources, making it easier for users to deploy Kismet for wireless network monitoring and analysis.
