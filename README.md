@@ -1,24 +1,52 @@
 # Install and configure Kismet with GPS
-A Bash script for installing and configuring kismet.
-You will be prompted for user input on the username you'd like to create a kismet log directory.
+This script is designed to automate the setup process for installing and configuring Kismet, a wireless network detector, sniffer, and intrusion detection system. Below is an overview of the script's usage, process, and key steps:
 
-Upon installation, you will be able to collect on hci0, wlan0 (internal cards), and ttyUSB0.
+Usage:
+Run Script: Execute the script using Bash on a Linux system.
+bash
+Copy code
+./script_name.sh
+Process Overview:
+User Input: The script prompts the user to input their username, which is stored in a variable for later use.
+Creating Directory: A directory named "kismet" is created under the user's home directory.
+Setting Configuration: The script sets the location of the Kismet configuration file.
+Installing Kismet: It installs Kismet by adding the necessary repository, updating the package list, and installing Kismet.
+Creating Kismet Configuration: The script generates a configuration file for Kismet (kismet_site.conf) with specific settings for Bluetooth, Wi-Fi, and GPS sources.
+Installing GPS Drivers: Installs GPSD, a service daemon that monitors one or more GPS devices attached to a host computer.
+Starting GPSD: Initiates GPSD to utilize the GPS puck (GPS receiver).
+Displaying Device Associations: Displays previous device associations using dmesg.
+Completion Message: Notifies the user about the successful installation of Kismet, the location of the configuration file, and how to view GPS device settings.
+Detailed Process:
+User Input:
 
+Prompts the user to enter their username.
+Clears the terminal screen.
+Creating Directory:
 
-Copy the script to your linux machine: 
+Creates a directory named "kismet" under /home/$user/kismet.
+Setting Configuration:
 
-```wget https://raw.githubusercontent.com/BwithE/kismet/main/kismet_install.sh```
+Defines the location of the Kismet configuration file (kismet_site.conf).
+Installing Kismet:
 
-Make the script executable: 
+Adds the Kismet repository key.
+Adds the Kismet repository to the system's package sources.
+Updates the package list.
+Installs Kismet using apt.
+Creating Kismet Configuration:
 
-```sudo chmod +x kismet_install.sh```
+Generates a configuration file for Kismet (kismet_site.conf) with specific source settings for Bluetooth, Wi-Fi, and GPS.
+Installing GPS Drivers:
 
-Run the script:
+Installs GPSD using apt.
+Starting GPSD:
 
-```sudo ./kismet_install.sh``` 
+Initiates GPSD to use the GPS puck connected to /dev/ttyUSB0.
+Displaying Device Associations:
 
-OR
+Lists previous device associations using dmesg.
+Completion Message:
 
-```sudo bash kismet_install.sh```
-
-Documentation can be found at https://www.kismetwireless.net/
+Notifies the user about the successful installation of Kismet.
+Informs the user about the location of the Kismet configuration file and how to view GPS device settings using dmesg.
+This script provides a streamlined way to set up Kismet with specific configurations, including Wi-Fi, Bluetooth, and GPS sources, making it easier for users to deploy Kismet for wireless network monitoring and analysis.
