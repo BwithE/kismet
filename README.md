@@ -3,7 +3,8 @@ This script is designed to automate the setup process for installing and configu
 
 # Usage:
 Copy then run the script: 
-wget https://raw.githubusercontent.com/BwithE/kismet/main/kismet_install.sh
+
+```wget https://raw.githubusercontent.com/BwithE/kismet/main/kismet_install.sh```
 
 # Process Overview:
 User Input: The script prompts the user to input their username, which is stored in a variable for later use.
